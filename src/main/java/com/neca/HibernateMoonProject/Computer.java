@@ -59,4 +59,9 @@ public class Computer {
 		this.alien = alien;
 	}
 	
+	@Override
+	public String toString() {
+		return "Computer [cid=" + cid + ", name=" + name + ", size=" + size + ", alien=" + alien + "]";
+	}
+	
 }

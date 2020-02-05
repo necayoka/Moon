@@ -11,10 +11,10 @@ public class App
     public static void main( String[] args )
     {
         Alien alien = new Alien();
-        alien.setAid(2);
-        alien.setAname("Peca");
+        alien.setAid(16);
+        alien.setAname("Neca");
     	
-    	Computer computer = new Computer(222, "Dell", 14, alien);
+    	Computer computer = new Computer(224, "Razer", 15, alien);
         
         Configuration config = new Configuration().configure().addAnnotatedClass(Alien.class).addAnnotatedClass(Computer.class);
         ServiceRegistry registry = (ServiceRegistry) new ServiceRegistryBuilder().applySettings(config.getProperties()).buildServiceRegistry();
